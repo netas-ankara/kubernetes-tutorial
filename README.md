@@ -169,3 +169,12 @@ Endpoints:    100.96.1.3:8080
 Session Affinity: None
 Events:     <none>
 ```
+
+- Scaling a Deployment
+
+You can scale a Deployment by using the following command:
+
+```
+kubectl scale deployment javaee7-hol --replicas=10
+deployment "javaee7-hol" scaled
+```
