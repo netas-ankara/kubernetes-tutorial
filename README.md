@@ -177,4 +177,6 @@ You can scale a Deployment by using the following command:
 ```
 kubectl scale deployment javaee7-hol --replicas=10
 deployment "javaee7-hol" scaled
+
+kubeadm join 10.32.0.113:6443 --token xdg0to.v2wndgkq96ouk5c4 --discovery-token-ca-cert-hash sha256:8548efe0cbca2787f86b63b9431866e9fe5ac92f859b2ddea311155829035585
 ```
