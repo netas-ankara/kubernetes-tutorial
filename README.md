@@ -63,8 +63,8 @@ This will create a one master cluster, and will give chance to join other nodes 
     - `systemctl restart kubelet`
    
 - Creating multi-node cluster:
-  - On master node:
-    - `sudo kubeadm init`
+  - On master node (initialize according to flannel):
+    - `sudo kubeadm init --pod-network-cidr=10.244.0.0/16`
   - Before joining a node you need to issue the following commands:
     ```
     - mkdir -p $HOME/.kube
